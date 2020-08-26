@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route ,Switch} from 'react-router-dom'
+import './App.scss';
 
-function App() {
+//IMPORT COMPONENTS
+import Navbar from './components/Navbar'
+import Login from './components/Login'
+import Register from './components/Register'
+import DetailPage from './components/DetailPage'
+import MainPage from './components/MainPage'
+
+const App:React.FC = () => {
+
+  const logo = 'https://araipolska.pl/wp-content/uploads/2014/04/arai-logo-BLK.png'
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar logo={logo} />
+        <Switch>
+          <Route path={'/helmets'} exact component={MainPage}/>
+          <Route path={'/helmet/:id'} exact component={DetailPage}/>
+          <Route path={'/Login'} exact component={Login}/>
+          <Route path={'/Register'} exact component={Register}/>
+        </Switch>
+      </Router>
     </div>
   );
 }

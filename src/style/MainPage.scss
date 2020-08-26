@@ -1,0 +1,214 @@
+.MainPage {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.MainPage-FirstSection{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.MainPage-FirstSection-Photo{
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainPage-FirstSection-Photo-Img{
+    max-width: 100%;
+}
+
+.MainPage-FirstSection-Text{
+    position: relative;
+    top:200px;
+    opacity: 0;
+    margin: 0px;
+    padding: 40px;
+    font-size: 25px;
+    font-weight: 450;
+    width: 40%;
+    color: rgb(59, 59, 59);
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    -webkit-box-shadow: 35px 33px 35px 10px rgba(0,0,0,0.59);
+    -moz-box-shadow: 35px 33px 35px 10px rgba(0,0,0,0.59);
+    box-shadow: 35px 33px 35px 10px rgba(0,0,0,0.59);
+
+
+}
+
+.MainPage-SecondSection{
+    margin: 20px 0px 20px 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url('https://araipolska.pl/wp-content/uploads/2014/04/hi_00_test_phillip-island_rea_gb36262.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 15px 55px 15px rgba(0,0,0,0.46);
+-moz-box-shadow: 0px 15px 55px 15px rgba(0,0,0,0.46);
+box-shadow: 0px 15px 55px 15px rgba(0,0,0,0.46);
+
+}
+
+.MainPage-ThirdSection{
+    margin: 60px 0px 20px 0px;
+    padding: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.MainPage-ThirdSection-Filter{
+    margin: 0px;
+    padding: 0px;
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainPage-ThirdSection-Filter-normal{
+    margin: 10px;
+    padding: 0px;
+    width:300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainPage-ThirdSection-Filter-Show{
+    margin: 10px;
+    padding: 0px;
+    width:300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainPage-ThirdSection-Filter-unnormal{
+    margin: 14px;
+    padding: 0px;
+    width:300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(121, 121, 121, 0.199);
+}
+
+.MainPage-ThirdSection-Filter-Show > div{
+    margin: 0px 6px 0px 4px;
+    padding: 0px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainPage-ThirdSection-Filter-Show > div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.MainPage-ThirdSection-Filter-Show > div:active{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+
+.MainPage-ThirdSection-Filter-unnormal:hover{
+    background-color: rgba(121, 121, 121, 0.315);
+    cursor: pointer;
+    -webkit-box-shadow: 25px 27px 18px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 25px 27px 18px -14px rgba(0,0,0,0.75);
+    box-shadow: 25px 27px 18px -14px rgba(0,0,0,0.75);
+    z-index: 2;
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.MainPage-ThirdSection-Filter-unnormal:active{
+    background-color: rgba(51, 51, 51, 0.315);
+    cursor: pointer;
+    -webkit-box-shadow: 25px 27px 18px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 25px 27px 18px -14px rgba(0,0,0,0.75);
+    box-shadow: 25px 27px 18px -14px rgba(0,0,0,0.75);
+    z-index: 2;
+    transform: scale(1.0);
+    transition: all 0.25s;
+}
+
+.MainPage-ThirdSection-Filter-Count > div {
+    margin:0px 8px 0px 8px;
+    padding: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MainPage-ThirdSection-Filter-Count > div:hover {
+    color: grey;
+}
+
+.MainPage-ThirdSection-Filter-Count > div:hover {
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+}
+
+.MainPage-ThirdSection-Cards{
+    margin: 0px;
+    padding: 0px;
+    width: 1000px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1200px) {
+    .MainPage-FirstSection {
+        flex-direction: column;
+    }
+    .MainPage-FirstSection-Text{
+        width: 60%;
+    }
+    .MainPage-SecondSection{
+        width: 100%;
+        height: 200px;
+    }
+    .MainPage-ThirdSection{
+        align-items: center;
+        flex-direction: column;
+    }
+  }

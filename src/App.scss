@@ -1,0 +1,23 @@
+@import './style/Navbar.scss';
+@import './style/MainPage.scss';
+@import './style/HelmetCard.scss';
+@import './style/DetailPage.scss';
+@import './style/Loader.scss';
+@import './style/Login.scss';
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}

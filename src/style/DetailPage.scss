@@ -1,0 +1,337 @@
+.DetailPage{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.DetailPage-Content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Photos{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.BigPhoto{
+    margin:0px;
+    padding:0px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box; 
+}
+.BigPhoto-Img{
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    box-sizing: border-box;   
+}
+.SmallPhotos{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+.SmallPhoto-Img{
+    position: relative;
+    bottom:50px;
+    margin:0px 5px 0px 5px;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    box-sizing: border-box; 
+    -webkit-box-shadow: 25px 27px 18px -14px rgba(0,0,0,0.75);
+-moz-box-shadow: 25px 27px 18px -14px rgba(0,0,0,0.75);
+box-shadow: 25px 27px 18px -14px rgba(0,0,0,0.75);
+}
+
+.SmallPhoto-Img:hover{
+    border: 2px solid rgb(82, 82, 82); 
+}
+
+.SmallPhoto-Img:active{
+    transform: scale(0.9);
+    transition: all 0.1s;
+}
+
+.SmallPhoto-Img-Pic{
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.Description{
+    margin:0px;
+    padding:0px;
+    width: 30%;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Description > div{
+    margin:10px;
+}
+
+.Description-Name{
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+.Description-Price{
+    color:rgb(189, 18, 18);
+    font-size: 30px;
+    font-weight: 600;
+}
+.Description-Desc{
+    color:rgb(73, 73, 73);
+}
+
+.Comments{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Comments-Comments{
+    margin: 10px;
+    padding:0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Comments-AddComment{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Comment{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Comment-Picture{
+    margin: 15px;
+    padding:0px;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 10px 2px 10px 5px rgb(63, 63, 63);
+}
+.Comment-Picture-Logo{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box; 
+}
+.Comment-Content{
+   margin: 0px;
+    padding:0px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Comment-Data{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Comment-Data > div{
+    margin: 5px;
+}
+
+.Comment-Data-User{
+    font-size: 12px;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.Comment-Data-Date{
+    font-size: 12px;
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.Comment-Text{
+    margin: 5px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.Comment-Tags {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Comment-Tags:hover {
+    cursor: pointer;
+}
+
+.Comment-Tags > div{
+    margin: 0px 4px 0px 4px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .DetailPage-Content{
+        flex-direction: column;
+    }
+    .Description{
+        width: 60%;
+    }
+  }
+
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .custom-btn:active {
+      transform: scale(0.9);
+      transition: all 0.5s;
+  }
+
+  .btn-8 {
+    background-color: #f0ecfc;
+  background-image: linear-gradient(315deg, #f0ecfc 0%, #636363 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-8 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-8:before,
+  .btn-8:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #636363;
+    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+    transition: all 0.3s ease;
+  }
+  .btn-8:before{
+     height: 0%;
+     width: 2px;
+  }
+  .btn-8:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-8:hover:before {
+    height: 100%;
+  }
+  .btn-8:hover:after {
+    width: 100%;
+  }
+  .btn-8:hover{
+    background: transparent;
+  }
+  .btn-8 span:hover{
+    color: #636363;
+  }
+  .btn-8 span:before,
+  .btn-8 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #636363;
+    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+    transition: all 0.3s ease;
+  }
+  .btn-8 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-8 span:after {
+    height: 2px;
+    width: 0%;
+  }
+  .btn-8 span:hover:before {
+    height: 100%;
+  }
+  .btn-8 span:hover:after {
+    width: 100%;
+  }
